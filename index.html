@@ -51,9 +51,11 @@
 <body class="antialiased text-gray-800">
 
     <!-- Barra Superior de Promociones -->
-    <div class="bg-terracotta text-white text-xs sm:text-sm text-center py-2 px-4 font-medium flex justify-center items-center gap-2 shadow-sm">
+    <div
+        class="bg-terracotta text-white text-xs sm:text-sm text-center py-2 px-4 font-medium flex justify-center items-center gap-2 shadow-sm">
         <span>🌵 <strong>PROMO LANZAMIENTO JUJUY:</strong> 2 Barras Decorativas x $9.000 + Envíos Locales</span>
-        <a href="#catalogo" class="underline hover:text-sand-light transition-colors hidden sm:inline ml-2">Aprovechar ahora</a>
+        <a href="#catalogo" class="underline hover:text-sand-light transition-colors hidden sm:inline ml-2">Aprovechar
+            ahora</a>
     </div>
 
     <!-- Encabezado de Navegación -->
@@ -61,12 +63,17 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
             <!-- Logo e Identidad de Marca -->
             <a href="#" class="flex items-center gap-3">
-                <div class="w-12 h-12 rounded-full border-2 border-sage flex items-center justify-center bg-sand-light shadow-inner overflow-hidden">
+                <div
+                    class="w-12 h-12 rounded-full border-2 border-sage flex items-center justify-center bg-sand-light shadow-inner overflow-hidden">
                     <img src="./img/logo.png" alt="Puna Serena Logo" class="w-full h-full object-cover">
                 </div>
                 <div>
-                    <span class="block text-xl sm:text-2xl font-bold font-serif text-sage tracking-wider leading-none">PUNA SERENA</span>
-                    <span class="block text-[10px] sm:text-xs text-terracotta italic font-serif tracking-widest mt-0.5">ALMA DE LA PUNA, AROMA NATURAL</span>
+                    <span
+                        class="block text-xl sm:text-2xl font-bold font-serif text-sage tracking-wider leading-none">PUNA
+                        SERENA</span>
+                    <span
+                        class="block text-[10px] sm:text-xs text-terracotta italic font-serif tracking-widest mt-0.5">ALMA
+                        DE LA PUNA, AROMA NATURAL</span>
                 </div>
             </a>
 
@@ -93,7 +100,8 @@
                 <button id="cartBtn" onclick="alternarCarrito()"
                     class="relative p-2.5 bg-sand-light hover:bg-sand rounded-full text-sage border border-sage/20 transition-all">
                     <i class="fas fa-shopping-bag text-lg"></i>
-                    <span id="cartCount" class="absolute -top-1 -right-1 bg-terracotta text-white text-[10px] font-bold w-5 h-5 rounded-full flex items-center justify-center border-2 border-white">0</span>
+                    <span id="cartCount"
+                        class="absolute -top-1 -right-1 bg-terracotta text-white text-[10px] font-bold w-5 h-5 rounded-full flex items-center justify-center border-2 border-white">0</span>
                 </button>
 
                 <!-- Botón Menú Móvil -->
@@ -105,19 +113,34 @@
 
         <!-- Menú Desplegable Móvil -->
         <div id="mobileMenu" class="hidden md:hidden bg-sand-soft border-b border-sand px-6 py-4 space-y-3">
-            <a href="#inicio" onclick="alternarMenuMovil()" class="block text-gray-700 hover:text-terracotta font-medium">Inicio</a>
-            <a href="#catalogo" onclick="alternarMenuMovil()" class="block text-gray-700 hover:text-terracotta font-medium">Productos</a>
-            <a href="#refundido" onclick="alternarMenuMovil()" class="block text-gray-700 hover:text-terracotta font-medium">Sistema de Refundido</a>
-            <a href="#nosotros" onclick="alternarMenuMovil()" class="block text-gray-700 hover:text-terracotta font-medium">Nosotros</a>
-            <a href="#contacto" onclick="alternarMenuMovil()" class="block text-gray-700 hover:text-terracotta font-medium">Contacto</a>
+            <a href="#inicio" onclick="alternarMenuMovil()"
+                class="block text-gray-700 hover:text-terracotta font-medium">Inicio</a>
+            <a href="#catalogo" onclick="alternarMenuMovil()"
+                class="block text-gray-700 hover:text-terracotta font-medium">Productos</a>
+            <a href="#refundido" onclick="alternarMenuMovil()"
+                class="block text-gray-700 hover:text-terracotta font-medium">Sistema de Refundido</a>
+            <a href="#nosotros" onclick="alternarMenuMovil()"
+                class="block text-gray-700 hover:text-terracotta font-medium">Nosotros</a>
+            <a href="#contacto" onclick="alternarMenuMovil()"
+                class="block text-gray-700 hover:text-terracotta font-medium">Contacto</a>
         </div>
     </header>
 
     <!-- Sección Hero Principal -->
-    <section id="inicio" class="hero-gradient py-12 md:py-20 lg:py-24 border-b border-sand/50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-2 gap-12 items-center">
+    <section id="inicio" class="relative py-12 md:py-20 lg:py-24 border-b border-sand/50 overflow-hidden">
+        <!-- Slider de Imágenes de Fondo (Background Multi-Imagen) -->
+        <div id="heroBgSlider" class="absolute inset-0 -z-10">
+            <div class="hero-bg-slide active bg-cover bg-center" style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREggVCt72U2oFXeo6rxxwCkFtzGXsI8mlv0_wxRB2h_Q&s=10');"></div>
+            <div class="hero-bg-slide bg-cover bg-center" style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtQcAe6P3_YmgL9USCDO8IAp7yyd6nzx_n3S7SVpTjjw&s=10');"></div>
+            <div class="hero-bg-slide bg-cover bg-center" style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRghnLErbnb-67KKAv1Y0eLhi7KO1ILGWpCcOaQmuxOfw&s=10');"></div>
+            <!-- Capa de Superposición de Color para garantizar la legibilidad del texto -->
+            
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-2 gap-12 items-center relative z-10">
             <div class="space-y-6 text-center md:text-left">
-                <div class="inline-flex items-center gap-2 bg-terracotta/10 border border-terracotta/20 text-terracotta font-semibold px-4 py-1.5 rounded-full text-xs sm:text-sm">
+                <div
+                    class="inline-flex items-center gap-2 bg-terracotta/10 border border-terracotta/20 text-terracotta font-semibold px-4 py-1.5 rounded-full text-xs sm:text-sm">
                     <i class="fas fa-mountain"></i>
                     <span>Artesanal • 100% Cera de Soja • Jujuy</span>
                 </div>
@@ -126,24 +149,29 @@
                     Llevate la Puna <br><span class="text-terracotta italic font-serif">a tu Casa</span>
                 </h1>
 
-                <p class="text-gray-700 text-base sm:text-lg max-w-xl mx-auto md:mx-0 leading-relaxed">
-                    Aromatizadores ecológicos en barra elaborados a mano con cera vegetal de soja, aceites esenciales y decorados con flores y yuyitos autóctonos del Norte Jujeño.
+                <p class=" text-base sm:text-lg max-w-xl mx-auto md:mx-0 leading-relaxed">
+                    Aromatizadores ecológicos en barra elaborados a mano con cera vegetal de soja, aceites esenciales y
+                    decorados con flores y yuyitos autóctonos del Norte Jujeño.
                 </p>
 
                 <div class="flex flex-wrap items-center justify-center md:justify-start gap-4 pt-2">
-                    <div class="flex items-center gap-2 text-sm text-gray-700 bg-white/80 backdrop-blur px-3 py-1.5 rounded-lg border border-sand">
+                    <div
+                        class="flex items-center gap-2 text-sm text-gray-700 bg-white/80 backdrop-blur px-3 py-1.5 rounded-lg border border-sand">
                         <i class="fas fa-clock text-terracotta"></i> 30 a 45 días de aroma
                     </div>
-                    <div class="flex items-center gap-2 text-sm text-gray-700 bg-white/80 backdrop-blur px-3 py-1.5 rounded-lg border border-sand">
+                    <div
+                        class="flex items-center gap-2 text-sm text-gray-700 bg-white/80 backdrop-blur px-3 py-1.5 rounded-lg border border-sand">
                         <i class="fas fa-leaf text-sage"></i> Cero plásticos ni aerosoles
                     </div>
                 </div>
 
                 <div class="flex flex-col sm:flex-row items-center justify-center md:justify-start gap-4 pt-4">
-                    <a href="#catalogo" class="w-full sm:w-auto text-center bg-terracotta hover:bg-terracotta-dark text-white font-semibold px-8 py-3.5 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-0.5">
+                    <a href="#catalogo"
+                        class="w-full sm:w-auto text-center bg-terracotta hover:bg-terracotta-dark text-white font-semibold px-8 py-3.5 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-0.5">
                         <i class="fas fa-shopping-bag mr-2"></i>Ver Catálogo
                     </a>
-                    <a href="#refundido" class="w-full sm:w-auto text-center bg-white hover:bg-sand-light text-sage border-2 border-sage font-semibold px-8 py-3.5 rounded-full shadow-sm transition-all">
+                    <a href="#refundido"
+                        class="w-full sm:w-auto text-center bg-white hover:bg-sand-light text-sage border-2 border-sage font-semibold px-8 py-3.5 rounded-full shadow-sm transition-all">
                         <i class="fas fa-recycle mr-2"></i>Sistema de Refundido
                     </a>
                 </div>
@@ -152,22 +180,25 @@
             <!-- Tarjeta Visual Destacada -->
             <div class="relative mx-auto max-w-md md:max-w-none w-full">
                 <div class="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-white bg-sand-light">
-                    <div class="aspect-[4/3] sm:aspect-square bg-cover bg-center imagen-destacada-hero">
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent">
-                            <img src="./img/img6.png" alt="Barra Decorativa Aro Botánico" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                        </div>
+                    <div class="aspect-[4/3] sm:aspect-square bg-cover bg-center">
+                        <img src="./img/img6.png" alt="Barra Decorativa Aro Botánico"
+                            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                     </div>
-                    <div class="absolute bottom-0 inset-x-0 p-6 text-white space-y-2">
-                        <div class="bg-terracotta text-white text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-full inline-block">
+                    <div
+                        class="absolute bottom-0 inset-x-0 p-6 text-white space-y-2 bg-gradient-to-t from-black/80 via-black/40 to-transparent">
+                        <div
+                            class="bg-terracotta text-white text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-full inline-block">
                             Producto Destacado
                         </div>
                         <h3 class="text-2xl font-serif font-bold">Barras Aromáticas con Flores Secas</h3>
-                        <p class="text-xs sm:text-sm text-sand-light">Con anís estrellado, lavanda, manzanilla y hierbas de la Quebrada.</p>
+                        <p class="text-xs sm:text-sm text-sand-light">Con anís estrellado, lavanda, manzanilla y hierbas
+                            de la Quebrada.</p>
                     </div>
                 </div>
 
                 <!-- Insignia Flotante -->
-                <div class="absolute -top-4 -right-4 bg-sage text-white rounded-2xl p-4 shadow-xl border-2 border-white hidden sm:block">
+                <div
+                    class="absolute -top-4 -right-4 bg-sage text-white rounded-2xl p-4 shadow-xl border-2 border-white hidden sm:block">
                     <div class="text-center font-serif">
                         <span class="block text-2xl font-bold">100%</span>
                         <span class="text-[10px] tracking-wider uppercase">Natural</span>
@@ -182,40 +213,53 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center max-w-2xl mx-auto mb-12">
                 <h2 class="text-2xl sm:text-3xl font-bold font-serif text-sage">¿Por qué elegir Puna Serena?</h2>
-                <p class="text-gray-600 text-sm sm:text-base mt-2">Una alternativa sustentable y estética para aromatizar y decorar cada rincón.</p>
+                <p class="text-gray-600 text-sm sm:text-base mt-2">Una alternativa sustentable y estética para
+                    aromatizar y decorar cada rincón.</p>
             </div>
 
             <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
-                <div class="bg-sand-soft p-6 rounded-2xl border border-sand hover:shadow-md transition-shadow text-center">
-                    <div class="w-14 h-14 bg-terracotta/10 text-terracotta rounded-full flex items-center justify-center mx-auto mb-4 text-2xl">
+                <div
+                    class="bg-sand-soft p-6 rounded-2xl border border-sand hover:shadow-md transition-shadow text-center">
+                    <div
+                        class="w-14 h-14 bg-terracotta/10 text-terracotta rounded-full flex items-center justify-center mx-auto mb-4 text-2xl">
                         <i class="fas fa-seedling"></i>
                     </div>
                     <h3 class="font-serif font-semibold text-lg text-sage mb-2">100% Cera de Soja</h3>
-                    <p class="text-xs sm:text-sm text-gray-600">Base vegetal biodegradable, libre de derivados del petróleo, parabenos o gases tóxicos.</p>
+                    <p class="text-xs sm:text-sm text-gray-600">Base vegetal biodegradable, libre de derivados del
+                        petróleo, parabenos o gases tóxicos.</p>
                 </div>
 
-                <div class="bg-sand-soft p-6 rounded-2xl border border-sand hover:shadow-md transition-shadow text-center">
-                    <div class="w-14 h-14 bg-sage/10 text-sage rounded-full flex items-center justify-center mx-auto mb-4 text-2xl">
+                <div
+                    class="bg-sand-soft p-6 rounded-2xl border border-sand hover:shadow-md transition-shadow text-center">
+                    <div
+                        class="w-14 h-14 bg-sage/10 text-sage rounded-full flex items-center justify-center mx-auto mb-4 text-2xl">
                         <i class="fas fa-spa"></i>
                     </div>
                     <h3 class="font-serif font-semibold text-lg text-sage mb-2">Flores y Yuyitos Norteños</h3>
-                    <p class="text-xs sm:text-sm text-gray-600">Decoradas artesanalmente con botánicos reales y aroma prolongado de 30 a 45 días.</p>
+                    <p class="text-xs sm:text-sm text-gray-600">Decoradas artesanalmente con botánicos reales y aroma
+                        prolongado de 30 a 45 días.</p>
                 </div>
 
-                <div class="bg-sand-soft p-6 rounded-2xl border border-sand hover:shadow-md transition-shadow text-center">
-                    <div class="w-14 h-14 bg-terracotta/10 text-terracotta rounded-full flex items-center justify-center mx-auto mb-4 text-2xl">
+                <div
+                    class="bg-sand-soft p-6 rounded-2xl border border-sand hover:shadow-md transition-shadow text-center">
+                    <div
+                        class="w-14 h-14 bg-terracotta/10 text-terracotta rounded-full flex items-center justify-center mx-auto mb-4 text-2xl">
                         <i class="fas fa-recycle"></i>
                     </div>
                     <h3 class="font-serif font-semibold text-lg text-sage mb-2">Sistema de Refundido</h3>
-                    <p class="text-xs sm:text-sm text-gray-600">Economía circular: devolvé la cera usada y recargá tu barra con aroma nuevo a menor costo.</p>
+                    <p class="text-xs sm:text-sm text-gray-600">Economía circular: devolvé la cera usada y recargá tu
+                        barra con aroma nuevo a menor costo.</p>
                 </div>
 
-                <div class="bg-sand-soft p-6 rounded-2xl border border-sand hover:shadow-md transition-shadow text-center">
-                    <div class="w-14 h-14 bg-sage/10 text-sage rounded-full flex items-center justify-center mx-auto mb-4 text-2xl">
+                <div
+                    class="bg-sand-soft p-6 rounded-2xl border border-sand hover:shadow-md transition-shadow text-center">
+                    <div
+                        class="w-14 h-14 bg-sage/10 text-sage rounded-full flex items-center justify-center mx-auto mb-4 text-2xl">
                         <i class="fas fa-wind"></i>
                     </div>
                     <h3 class="font-serif font-semibold text-lg text-sage mb-2">Sin Electricidad ni Fuego</h3>
-                    <p class="text-xs sm:text-sm text-gray-600">Listas para colgar o apoyar en placares, dormitorios, vehículos, baños y oficinas.</p>
+                    <p class="text-xs sm:text-sm text-gray-600">Listas para colgar o apoyar en placares, dormitorios,
+                        vehículos, baños y oficinas.</p>
                 </div>
             </div>
         </div>
@@ -227,37 +271,52 @@
             <div class="flex flex-col md:flex-row md:items-end justify-between mb-10 gap-4">
                 <div>
                     <span class="text-terracotta font-semibold text-sm tracking-wider uppercase">Catálogo Online</span>
-                    <h2 class="text-3xl sm:text-4xl font-bold font-serif text-sage mt-1">Elegí tu Experiencia Aromática</h2>
+                    <h2 class="text-3xl sm:text-4xl font-bold font-serif text-sage mt-1">Elegí tu Experiencia Aromática
+                    </h2>
                 </div>
 
                 <!-- Botones de Filtro por Categoría -->
                 <div class="flex flex-wrap gap-2">
-                    <button onclick="filtrarProductos('todos', event)" class="cat-btn active bg-sage text-white px-4 py-2 rounded-full text-xs sm:text-sm font-medium transition-all shadow-sm">Todos</button>
-                    <button onclick="filtrarProductos('hogar', event)" class="cat-btn bg-white hover:bg-sand text-gray-700 px-4 py-2 rounded-full text-xs sm:text-sm font-medium border border-sand transition-all">Línea Hogar</button>
-                    <button onclick="filtrarProductos('auto', event)" class="cat-btn bg-white hover:bg-sand text-gray-700 px-4 py-2 rounded-full text-xs sm:text-sm font-medium border border-sand transition-all">Línea Auto</button>
-                    <button onclick="filtrarProductos('empresa', event)" class="cat-btn bg-white hover:bg-sand text-gray-700 px-4 py-2 rounded-full text-xs sm:text-sm font-medium border border-sand transition-all">Línea Empresas</button>
+                    <button onclick="filtrarProductos('todos', event)"
+                        class="cat-btn active bg-sage text-white px-4 py-2 rounded-full text-xs sm:text-sm font-medium transition-all shadow-sm">Todos</button>
+                    <button onclick="filtrarProductos('hogar', event)"
+                        class="cat-btn bg-white hover:bg-sand text-gray-700 px-4 py-2 rounded-full text-xs sm:text-sm font-medium border border-sand transition-all">Línea
+                        Hogar</button>
+                    <button onclick="filtrarProductos('auto', event)"
+                        class="cat-btn bg-white hover:bg-sand text-gray-700 px-4 py-2 rounded-full text-xs sm:text-sm font-medium border border-sand transition-all">Línea
+                        Auto</button>
+                    <button onclick="filtrarProductos('empresa', event)"
+                        class="cat-btn bg-white hover:bg-sand text-gray-700 px-4 py-2 rounded-full text-xs sm:text-sm font-medium border border-sand transition-all">Línea
+                        Empresas</button>
                 </div>
             </div>
 
             <!-- Grid de Tarjetas de Productos -->
             <div id="productsGrid" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
                 <!-- Producto 1 -->
-                <div class="product-card bg-white rounded-3xl overflow-hidden border border-sand shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col" data-category="hogar">
+                <div class="product-card bg-white rounded-3xl overflow-hidden border border-sand shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col"
+                    data-category="hogar">
                     <div class="relative aspect-square bg-sand-light overflow-hidden group">
-                        <img src="./img/img1.png" alt="Barra Decorativa Aro Botánico" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                        <span class="absolute top-4 left-4 bg-terracotta text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-wider">Hogar</span>
-                        <div class="absolute top-4 right-4 bg-white/90 backdrop-blur text-sage text-xs font-bold px-2.5 py-1 rounded-full">
+                        <img src="./img/img1.png" alt="Barra Decorativa Aro Botánico"
+                            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <span
+                            class="absolute top-4 left-4 bg-terracotta text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-wider">Hogar</span>
+                        <div
+                            class="absolute top-4 right-4 bg-white/90 backdrop-blur text-sage text-xs font-bold px-2.5 py-1 rounded-full">
                             30-45 Días
                         </div>
                     </div>
                     <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
                         <div>
                             <h3 class="text-xl font-serif font-bold text-sage">Barra Aro Botánico</h3>
-                            <p class="text-xs text-gray-500 mt-1">Decorada con pétalos de rosa, flores de lavanda y yuyitos puneños.</p>
+                            <p class="text-xs text-gray-500 mt-1">Decorada con pétalos de rosa, flores de lavanda y
+                                yuyitos puneños.</p>
 
                             <div class="mt-4">
-                                <label class="block text-xs font-semibold text-gray-700 mb-1">Elegí la Fragancia:</label>
-                                <select id="fragrance-1" class="w-full text-xs bg-sand-soft border border-sand rounded-xl p-2.5 focus:ring-1 focus:ring-terracotta focus:outline-none">
+                                <label class="block text-xs font-semibold text-gray-700 mb-1">Elegí la
+                                    Fragancia:</label>
+                                <select id="fragrance-1"
+                                    class="w-full text-xs bg-sand-soft border border-sand rounded-xl p-2.5 focus:ring-1 focus:ring-terracotta focus:outline-none">
                                     <option value="Cítrico (Naranja & Verbena)">🍊 Cítrico (Naranja & Verbena)</option>
                                     <option value="Floral (Lavanda & Azahar)">🌸 Floral (Lavanda & Azahar)</option>
                                     <option value="Herbal (Muña Muña & Romero)">🌿 Herbal (Muña Muña & Romero)</option>
@@ -268,9 +327,11 @@
                         <div class="pt-2 border-t border-sand flex items-center justify-between">
                             <div>
                                 <span class="text-2xl font-bold text-terracotta font-serif">$5.000</span>
-                                <span class="block text-[10px] text-emerald-700 font-semibold">2x $9.000 en el carrito</span>
+                                <span class="block text-[10px] text-emerald-700 font-semibold">2x $9.000 en el
+                                    carrito</span>
                             </div>
-                            <button onclick="agregarAlCarrito(1, 'Barra Aro Botánico', 5000, 'fragrance-1', 'hogar')" class="bg-sage hover:bg-sage-dark text-white text-xs font-semibold px-4 py-2.5 rounded-xl transition-all flex items-center gap-2 active:scale-95 shadow">
+                            <button onclick="agregarAlCarrito(1, 'Barra Aro Botánico', 5000, 'fragrance-1', 'hogar')"
+                                class="bg-sage hover:bg-sage-dark text-white text-xs font-semibold px-4 py-2.5 rounded-xl transition-all flex items-center gap-2 active:scale-95 shadow">
                                 <i class="fas fa-cart-plus"></i>
                                 <span>Agregar</span>
                             </button>
@@ -279,22 +340,29 @@
                 </div>
 
                 <!-- Producto 2 -->
-                <div class="product-card bg-white rounded-3xl overflow-hidden border border-sand shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col" data-category="hogar">
+                <div class="product-card bg-white rounded-3xl overflow-hidden border border-sand shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col"
+                    data-category="hogar">
                     <div class="relative aspect-square bg-sand-light overflow-hidden group">
-                        <img src="./img/img2.png" alt="Barra Hexagonal Anís" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                        <span class="absolute top-4 left-4 bg-terracotta text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-wider">Hogar</span>
+                        <img src="./img/img2.png" alt="Barra Hexagonal Anís"
+                            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <span
+                            class="absolute top-4 left-4 bg-terracotta text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-wider">Hogar</span>
                     </div>
                     <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
                         <div>
                             <h3 class="text-xl font-serif font-bold text-sage">Barra Hexágono Sol</h3>
-                            <p class="text-xs text-gray-500 mt-1">Con anís estrellado central, canela y aceites esenciales concentrados.</p>
+                            <p class="text-xs text-gray-500 mt-1">Con anís estrellado central, canela y aceites
+                                esenciales concentrados.</p>
 
                             <div class="mt-4">
-                                <label class="block text-xs font-semibold text-gray-700 mb-1">Elegí la Fragancia:</label>
-                                <select id="fragrance-2" class="w-full text-xs bg-sand-soft border border-sand rounded-xl p-2.5 focus:ring-1 focus:ring-terracotta focus:outline-none">
+                                <label class="block text-xs font-semibold text-gray-700 mb-1">Elegí la
+                                    Fragancia:</label>
+                                <select id="fragrance-2"
+                                    class="w-full text-xs bg-sand-soft border border-sand rounded-xl p-2.5 focus:ring-1 focus:ring-terracotta focus:outline-none">
                                     <option value="Amaderado (Anís & Canela)">🪵 Amaderado (Anís & Canela)</option>
                                     <option value="Cítrico (Limón & Jengibre)">🍋 Cítrico (Limón & Jengibre)</option>
-                                    <option value="Floral (Rosas de la Quebrada)">🌹 Floral (Rosas de la Quebrada)</option>
+                                    <option value="Floral (Rosas de la Quebrada)">🌹 Floral (Rosas de la Quebrada)
+                                    </option>
                                 </select>
                             </div>
                         </div>
@@ -302,9 +370,11 @@
                         <div class="pt-2 border-t border-sand flex items-center justify-between">
                             <div>
                                 <span class="text-2xl font-bold text-terracotta font-serif">$5.000</span>
-                                <span class="block text-[10px] text-emerald-700 font-semibold">2x $9.000 en el carrito</span>
+                                <span class="block text-[10px] text-emerald-700 font-semibold">2x $9.000 en el
+                                    carrito</span>
                             </div>
-                            <button onclick="agregarAlCarrito(2, 'Barra Hexágono Sol', 5000, 'fragrance-2', 'hogar')" class="bg-sage hover:bg-sage-dark text-white text-xs font-semibold px-4 py-2.5 rounded-xl transition-all flex items-center gap-2 active:scale-95 shadow">
+                            <button onclick="agregarAlCarrito(2, 'Barra Hexágono Sol', 5000, 'fragrance-2', 'hogar')"
+                                class="bg-sage hover:bg-sage-dark text-white text-xs font-semibold px-4 py-2.5 rounded-xl transition-all flex items-center gap-2 active:scale-95 shadow">
                                 <i class="fas fa-cart-plus"></i>
                                 <span>Agregar</span>
                             </button>
@@ -313,20 +383,28 @@
                 </div>
 
                 <!-- Producto 3 -->
-                <div class="product-card bg-white rounded-3xl overflow-hidden border border-sand shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col" data-category="auto">
+                <div class="product-card bg-white rounded-3xl overflow-hidden border border-sand shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col"
+                    data-category="auto">
                     <div class="relative aspect-square bg-sand-light overflow-hidden group">
-                        <img src="./img/img3.png" alt="Barra Auto Compacta" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                        <span class="absolute top-4 left-4 bg-sage text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-wider">Línea Auto</span>
+                        <img src="./img/img3.png" alt="Barra Auto Compacta"
+                            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <span
+                            class="absolute top-4 left-4 bg-sage text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-wider">Línea
+                            Auto</span>
                     </div>
                     <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
                         <div>
                             <h3 class="text-xl font-serif font-bold text-sage">Barra Compacta con Cordón</h3>
-                            <p class="text-xs text-gray-500 mt-1">Formato ideal para colgar en el retrovisor del vehículo. No chorrea con el calor.</p>
+                            <p class="text-xs text-gray-500 mt-1">Formato ideal para colgar en el retrovisor del
+                                vehículo. No chorrea con el calor.</p>
 
                             <div class="mt-4">
-                                <label class="block text-xs font-semibold text-gray-700 mb-1">Elegí la Fragancia:</label>
-                                <select id="fragrance-3" class="w-full text-xs bg-sand-soft border border-sand rounded-xl p-2.5 focus:ring-1 focus:ring-terracotta focus:outline-none">
-                                    <option value="Frescura Cítrica (Bergamota)">🍊 Frescura Cítrica (Bergamota)</option>
+                                <label class="block text-xs font-semibold text-gray-700 mb-1">Elegí la
+                                    Fragancia:</label>
+                                <select id="fragrance-3"
+                                    class="w-full text-xs bg-sand-soft border border-sand rounded-xl p-2.5 focus:ring-1 focus:ring-terracotta focus:outline-none">
+                                    <option value="Frescura Cítrica (Bergamota)">🍊 Frescura Cítrica (Bergamota)
+                                    </option>
                                     <option value="Eucalipto & Menta">🌿 Eucalipto & Menta</option>
                                     <option value="Vainilla Mística">🍦 Vainilla Mística</option>
                                 </select>
@@ -338,7 +416,8 @@
                                 <span class="text-2xl font-bold text-terracotta font-serif">$4.500</span>
                                 <span class="block text-[10px] text-gray-500">Incluye cordón</span>
                             </div>
-                            <button onclick="agregarAlCarrito(3, 'Barra Compacta Auto', 4500, 'fragrance-3', 'auto')" class="bg-sage hover:bg-sage-dark text-white text-xs font-semibold px-4 py-2.5 rounded-xl transition-all flex items-center gap-2 active:scale-95 shadow">
+                            <button onclick="agregarAlCarrito(3, 'Barra Compacta Auto', 4500, 'fragrance-3', 'auto')"
+                                class="bg-sage hover:bg-sage-dark text-white text-xs font-semibold px-4 py-2.5 rounded-xl transition-all flex items-center gap-2 active:scale-95 shadow">
                                 <i class="fas fa-cart-plus"></i>
                                 <span>Agregar</span>
                             </button>
@@ -347,22 +426,32 @@
                 </div>
 
                 <!-- Producto 4 -->
-                <div class="product-card bg-white rounded-3xl overflow-hidden border border-sand shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col" data-category="empresa">
+                <div class="product-card bg-white rounded-3xl overflow-hidden border border-sand shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col"
+                    data-category="empresa">
                     <div class="relative aspect-square bg-sand-light overflow-hidden group">
-                        <img src="./img/img4.png" alt="Pack Corporativo XL" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                        <span class="absolute top-4 left-4 bg-terracotta text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-wider">Empresas / Boutique</span>
+                        <img src="./img/img4.png" alt="Pack Corporativo XL"
+                            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <span
+                            class="absolute top-4 left-4 bg-terracotta text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-wider">Empresas
+                            / Boutique</span>
                     </div>
                     <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
                         <div>
                             <h3 class="text-xl font-serif font-bold text-sage">Barra XL Corporativa / Spa</h3>
-                            <p class="text-xs text-gray-500 mt-1">Formato de mayor gramaje para locales comerciales, hoteles boutique, spas y oficinas.</p>
+                            <p class="text-xs text-gray-500 mt-1">Formato de mayor gramaje para locales comerciales,
+                                hoteles boutique, spas y oficinas.</p>
 
                             <div class="mt-4">
-                                <label class="block text-xs font-semibold text-gray-700 mb-1">Elegí la Fragancia:</label>
-                                <select id="fragrance-4" class="w-full text-xs bg-sand-soft border border-sand rounded-xl p-2.5 focus:ring-1 focus:ring-terracotta focus:outline-none">
-                                    <option value="Aroma Identidad Puna (Herbal & Maderas)">🏔️ Aroma Identidad Puna (Herbal & Maderas)</option>
-                                    <option value="Relax Spa (Lavanda & Manzanilla)">🧘 Relax Spa (Lavanda & Manzanilla)</option>
-                                    <option value="Energía Cítrica (Pomelo & Lemongrass)">⚡ Energía Cítrica (Pomelo & Lemongrass)</option>
+                                <label class="block text-xs font-semibold text-gray-700 mb-1">Elegí la
+                                    Fragancia:</label>
+                                <select id="fragrance-4"
+                                    class="w-full text-xs bg-sand-soft border border-sand rounded-xl p-2.5 focus:ring-1 focus:ring-terracotta focus:outline-none">
+                                    <option value="Aroma Identidad Puna (Herbal & Maderas)">🏔️ Aroma Identidad Puna
+                                        (Herbal & Maderas)</option>
+                                    <option value="Relax Spa (Lavanda & Manzanilla)">🧘 Relax Spa (Lavanda & Manzanilla)
+                                    </option>
+                                    <option value="Energía Cítrica (Pomelo & Lemongrass)">⚡ Energía Cítrica (Pomelo &
+                                        Lemongrass)</option>
                                 </select>
                             </div>
                         </div>
@@ -372,7 +461,9 @@
                                 <span class="text-2xl font-bold text-terracotta font-serif">$7.500</span>
                                 <span class="block text-[10px] text-gray-500">Alto rendimiento</span>
                             </div>
-                            <button onclick="agregarAlCarrito(4, 'Barra XL Corporativa', 7500, 'fragrance-4', 'empresa')" class="bg-sage hover:bg-sage-dark text-white text-xs font-semibold px-4 py-2.5 rounded-xl transition-all flex items-center gap-2 active:scale-95 shadow">
+                            <button
+                                onclick="agregarAlCarrito(4, 'Barra XL Corporativa', 7500, 'fragrance-4', 'empresa')"
+                                class="bg-sage hover:bg-sage-dark text-white text-xs font-semibold px-4 py-2.5 rounded-xl transition-all flex items-center gap-2 active:scale-95 shadow">
                                 <i class="fas fa-cart-plus"></i>
                                 <span>Agregar</span>
                             </button>
@@ -381,21 +472,28 @@
                 </div>
 
                 <!-- Producto 5 (Servicio de Refundido) -->
-                <div class="product-card bg-white rounded-3xl overflow-hidden border-2 border-sage/40 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col" data-category="hogar">
-                    <div class="relative aspect-square bg-sage/10 overflow-hidden flex flex-col items-center justify-center p-6 text-center">
+                <div class="product-card bg-white rounded-3xl overflow-hidden border-2 border-sage/40 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col"
+                    data-category="hogar">
+                    <div
+                        class="relative aspect-square bg-sage/10 overflow-hidden flex flex-col items-center justify-center p-6 text-center">
                         <i class="fas fa-recycle text-6xl text-sage mb-3 animate-pulse"></i>
-                        <span class="text-xs font-bold text-sage uppercase tracking-widest">Servicio de Economía Circular</span>
+                        <span class="text-xs font-bold text-sage uppercase tracking-widest">Servicio de Economía
+                            Circular</span>
                         <h4 class="text-lg font-serif font-bold text-terracotta mt-1">Carga por Refundido</h4>
-                        <p class="text-[11px] text-gray-600 mt-2">Traés tus restos de cera usada y te entregamos una barra nueva re-aromatizada.</p>
+                        <p class="text-[11px] text-gray-600 mt-2">Traés tus restos de cera usada y te entregamos una
+                            barra nueva re-aromatizada.</p>
                     </div>
                     <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
                         <div>
                             <h3 class="text-xl font-serif font-bold text-sage">Servicio de Refundido</h3>
-                            <p class="text-xs text-gray-500 mt-1">Válido para clientes que devuelven los restos de cera Puna Serena.</p>
+                            <p class="text-xs text-gray-500 mt-1">Válido para clientes que devuelven los restos de cera
+                                Puna Serena.</p>
 
                             <div class="mt-4">
-                                <label class="block text-xs font-semibold text-gray-700 mb-1">Elegí la Nueva Fragancia:</label>
-                                <select id="fragrance-5" class="w-full text-xs bg-sand-soft border border-sand rounded-xl p-2.5 focus:ring-1 focus:ring-terracotta focus:outline-none">
+                                <label class="block text-xs font-semibold text-gray-700 mb-1">Elegí la Nueva
+                                    Fragancia:</label>
+                                <select id="fragrance-5"
+                                    class="w-full text-xs bg-sand-soft border border-sand rounded-xl p-2.5 focus:ring-1 focus:ring-terracotta focus:outline-none">
                                     <option value="Aroma Cítrico Silvestre">🍊 Aroma Cítrico Silvestre</option>
                                     <option value="Aroma Floral Relajante">🌸 Aroma Floral Relajante</option>
                                     <option value="Aroma Herbal Puneño">🌿 Aroma Herbal Puneño</option>
@@ -408,7 +506,8 @@
                                 <span class="text-2xl font-bold text-sage font-serif">$3.000</span>
                                 <span class="block text-[10px] text-terracotta font-bold">¡Ahorrás $2.000!</span>
                             </div>
-                            <button onclick="agregarAlCarrito(5, 'Servicio de Refundido', 3000, 'fragrance-5', 'hogar')" class="bg-terracotta hover:bg-terracotta-dark text-white text-xs font-semibold px-4 py-2.5 rounded-xl transition-all flex items-center gap-2 active:scale-95 shadow">
+                            <button onclick="agregarAlCarrito(5, 'Servicio de Refundido', 3000, 'fragrance-5', 'hogar')"
+                                class="bg-terracotta hover:bg-terracotta-dark text-white text-xs font-semibold px-4 py-2.5 rounded-xl transition-all flex items-center gap-2 active:scale-95 shadow">
                                 <i class="fas fa-sync-alt"></i>
                                 <span>Solicitar</span>
                             </button>
@@ -417,19 +516,25 @@
                 </div>
 
                 <!-- Producto 6 (Combo Dúo) -->
-                <div class="product-card bg-white rounded-3xl overflow-hidden border border-sand shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col" data-category="hogar">
+                <div class="product-card bg-white rounded-3xl overflow-hidden border border-sand shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col"
+                    data-category="hogar">
                     <div class="relative aspect-square bg-sand-light overflow-hidden group">
-                        <img src="./img/img5.png" alt="Combo Dúo Puna" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                        <span class="absolute top-4 left-4 bg-terracotta text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-wider">Promo Dúo</span>
+                        <img src="./img/img5.png" alt="Combo Dúo Puna"
+                            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <span
+                            class="absolute top-4 left-4 bg-terracotta text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-wider">Promo
+                            Dúo</span>
                     </div>
                     <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
                         <div>
                             <h3 class="text-xl font-serif font-bold text-sage">Combo Lanzamiento (2 Barras)</h3>
-                            <p class="text-xs text-gray-500 mt-1">Incluye 2 barras decorativas en bolsita de organza reutilizable.</p>
+                            <p class="text-xs text-gray-500 mt-1">Incluye 2 barras decorativas en bolsita de organza
+                                reutilizable.</p>
 
                             <div class="mt-4">
                                 <label class="block text-xs font-semibold text-gray-700 mb-1">Combinación:</label>
-                                <select id="fragrance-6" class="w-full text-xs bg-sand-soft border border-sand rounded-xl p-2.5 focus:ring-1 focus:ring-terracotta focus:outline-none">
+                                <select id="fragrance-6"
+                                    class="w-full text-xs bg-sand-soft border border-sand rounded-xl p-2.5 focus:ring-1 focus:ring-terracotta focus:outline-none">
                                     <option value="1 Cítrica + 1 Floral">🍊 1 Cítrica + 🌸 1 Floral</option>
                                     <option value="2 Cítricas">🍊 2 Cítricas</option>
                                     <option value="2 Florales">🌸 2 Florales</option>
@@ -443,7 +548,9 @@
                                 <span class="text-2xl font-bold text-terracotta font-serif">$9.000</span>
                                 <span class="line-through text-xs text-gray-400 font-normal">$10.000</span>
                             </div>
-                            <button onclick="agregarAlCarrito(6, 'Combo Lanzamiento (2 Barras)', 9000, 'fragrance-6', 'hogar')" class="bg-sage hover:bg-sage-dark text-white text-xs font-semibold px-4 py-2.5 rounded-xl transition-all flex items-center gap-2 active:scale-95 shadow">
+                            <button
+                                onclick="agregarAlCarrito(6, 'Combo Lanzamiento (2 Barras)', 9000, 'fragrance-6', 'hogar')"
+                                class="bg-sage hover:bg-sage-dark text-white text-xs font-semibold px-4 py-2.5 rounded-xl transition-all flex items-center gap-2 active:scale-95 shadow">
                                 <i class="fas fa-cart-plus"></i>
                                 <span>Agregar</span>
                             </button>
@@ -459,36 +566,49 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid lg:grid-cols-2 gap-12 items-center">
                 <div class="space-y-6">
-                    <div class="inline-flex items-center gap-2 bg-sage/10 text-sage text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">
+                    <div
+                        class="inline-flex items-center gap-2 bg-sage/10 text-sage text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">
                         <i class="fas fa-leaf"></i> Economía Circular
                     </div>
-                    <h2 class="text-3xl sm:text-4xl font-bold font-serif text-sage">¿Cómo funciona el Sistema de Refundido?</h2>
+                    <h2 class="text-3xl sm:text-4xl font-bold font-serif text-sage">¿Cómo funciona el Sistema de
+                        Refundido?</h2>
                     <p class="text-gray-600 leading-relaxed text-sm sm:text-base">
-                        En Puna Serena nos comprometemos con el consumo responsable. Cuando tu barra pierda intensidad aromática (después de 30 a 45 días), no la tires: <strong>devuelve los restos de cera</strong> y los volvemos a procesar con fragancia nueva a un precio reducido.
+                        En Puna Serena nos comprometemos con el consumo responsable. Cuando tu barra pierda intensidad
+                        aromática (después de 30 a 45 días), no la tires: <strong>devuelve los restos de cera</strong> y
+                        los volvemos a procesar con fragancia nueva a un precio reducido.
                     </p>
 
                     <div class="space-y-4">
                         <div class="flex gap-4 items-start">
-                            <div class="w-8 h-8 rounded-full bg-terracotta text-white font-bold flex items-center justify-center shrink-0">1</div>
+                            <div
+                                class="w-8 h-8 rounded-full bg-terracotta text-white font-bold flex items-center justify-center shrink-0">
+                                1</div>
                             <div>
                                 <h4 class="font-bold text-sage text-sm sm:text-base">Disfrutás tu Barra</h4>
-                                <p class="text-xs text-gray-500">Colgala en tus placares, dormitorios o auto. Aromática por más de un mes.</p>
+                                <p class="text-xs text-gray-500">Colgala en tus placares, dormitorios o auto. Aromática
+                                    por más de un mes.</p>
                             </div>
                         </div>
 
                         <div class="flex gap-4 items-start">
-                            <div class="w-8 h-8 rounded-full bg-terracotta text-white font-bold flex items-center justify-center shrink-0">2</div>
+                            <div
+                                class="w-8 h-8 rounded-full bg-terracotta text-white font-bold flex items-center justify-center shrink-0">
+                                2</div>
                             <div>
                                 <h4 class="font-bold text-sage text-sm sm:text-base">Guardás los Restos</h4>
-                                <p class="text-xs text-gray-500">Juntás los trozos de cera vegetal en su bolsita de organza original.</p>
+                                <p class="text-xs text-gray-500">Juntás los trozos de cera vegetal en su bolsita de
+                                    organza original.</p>
                             </div>
                         </div>
 
                         <div class="flex gap-4 items-start">
-                            <div class="w-8 h-8 rounded-full bg-terracotta text-white font-bold flex items-center justify-center shrink-0">3</div>
+                            <div
+                                class="w-8 h-8 rounded-full bg-terracotta text-white font-bold flex items-center justify-center shrink-0">
+                                3</div>
                             <div>
                                 <h4 class="font-bold text-sage text-sm sm:text-base">Recargás a Menor Costo</h4>
-                                <p class="text-xs text-gray-500">Nos entregás la cera usada y elaboramos una barra totalmente renovada por solo $3.000.</p>
+                                <p class="text-xs text-gray-500">Nos entregás la cera usada y elaboramos una barra
+                                    totalmente renovada por solo $3.000.</p>
                             </div>
                         </div>
                     </div>
@@ -496,12 +616,15 @@
 
                 <!-- Widget Simulador de Ahorro -->
                 <div class="bg-sand-soft p-8 rounded-3xl border-2 border-sand shadow-lg">
-                    <h3 class="text-xl font-serif font-bold text-sage text-center mb-6">Simulador de Ahorro & Impacto Eco</h3>
+                    <h3 class="text-xl font-serif font-bold text-sage text-center mb-6">Simulador de Ahorro & Impacto
+                        Eco</h3>
 
                     <div class="space-y-6">
                         <div>
-                            <label class="block text-xs font-semibold text-gray-700 mb-2">¿Cuántas barras consumís en el año?</label>
-                            <input type="range" id="barsCount" min="2" max="12" value="4" oninput="calcularAhorroRefundido()" class="w-full accent-terracotta cursor-pointer">
+                            <label class="block text-xs font-semibold text-gray-700 mb-2">¿Cuántas barras consumís en el
+                                año?</label>
+                            <input type="range" id="barsCount" min="2" max="12" value="4"
+                                oninput="calcularAhorroRefundido()" class="w-full accent-terracotta cursor-pointer">
                             <div class="flex justify-between text-xs font-bold text-sage mt-1">
                                 <span>2 barras</span>
                                 <span id="barsDisplay" class="text-terracotta text-sm">4 barras al año</span>
@@ -512,7 +635,8 @@
                         <div class="grid grid-cols-2 gap-4 text-center bg-white p-4 rounded-2xl border border-sand">
                             <div>
                                 <span class="block text-xs text-gray-500">Ahorro estimado</span>
-                                <span id="savingsAmount" class="text-2xl font-serif font-bold text-terracotta">$8.000</span>
+                                <span id="savingsAmount"
+                                    class="text-2xl font-serif font-bold text-terracotta">$8.000</span>
                             </div>
                             <div>
                                 <span class="block text-xs text-gray-500">Plástico Evitado</span>
@@ -524,7 +648,8 @@
                             *Comparado con la compra constante de aerosoles industriales descartables.
                         </p>
 
-                        <button onclick="agregarRefundidoDirecto()" class="w-full bg-sage hover:bg-sage-dark text-white font-bold py-3 rounded-xl transition-all text-xs tracking-wider uppercase shadow">
+                        <button onclick="agregarRefundidoDirecto()"
+                            class="w-full bg-sage hover:bg-sage-dark text-white font-bold py-3 rounded-xl transition-all text-xs tracking-wider uppercase shadow">
                             Solicitar Recarga de Cera ($3.000)
                         </button>
                     </div>
@@ -542,9 +667,11 @@
             <div class="grid sm:grid-cols-3 gap-6 text-left">
                 <div class="bg-white p-6 rounded-2xl border border-sand shadow-sm space-y-3">
                     <div class="text-amber-400 text-xs">
-                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i><i class="fas fa-star"></i>
                     </div>
-                    <p class="text-xs sm:text-sm text-gray-700 italic">"Puse la barra de azahar y lavanda en el placard y el aroma dura muchísimo. Además queda súper linda colgada. Excelente iniciativa."</p>
+                    <p class="text-xs sm:text-sm text-gray-700 italic">"Puse la barra de azahar y lavanda en el placard
+                        y el aroma dura muchísimo. Además queda súper linda colgada. Excelente iniciativa."</p>
                     <div class="pt-2 border-t border-sand">
                         <span class="block font-bold text-xs text-sage">Camila R.</span>
                         <span class="text-[10px] text-gray-400">San Salvador de Jujuy</span>
@@ -553,9 +680,11 @@
 
                 <div class="bg-white p-6 rounded-2xl border border-sand shadow-sm space-y-3">
                     <div class="text-amber-400 text-xs">
-                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i><i class="fas fa-star"></i>
                     </div>
-                    <p class="text-xs sm:text-sm text-gray-700 italic">"Me encanta que no sea aerosol sintético. Compré la versión para el auto y el aroma a bergamota es riquísimo y no marea."</p>
+                    <p class="text-xs sm:text-sm text-gray-700 italic">"Me encanta que no sea aerosol sintético. Compré
+                        la versión para el auto y el aroma a bergamota es riquísimo y no marea."</p>
                     <div class="pt-2 border-t border-sand">
                         <span class="block font-bold text-xs text-sage">Gonzalo M.</span>
                         <span class="text-[10px] text-gray-400">Tilcara, Jujuy</span>
@@ -564,9 +693,11 @@
 
                 <div class="bg-white p-6 rounded-2xl border border-sand shadow-sm space-y-3">
                     <div class="text-amber-400 text-xs">
-                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i><i class="fas fa-star"></i>
                     </div>
-                    <p class="text-xs sm:text-sm text-gray-700 italic">"Ya probé el servicio de refundido. Entregué mi cerita vieja y por $3.000 me dieron una barra nueva. Súper recomendable."</p>
+                    <p class="text-xs sm:text-sm text-gray-700 italic">"Ya probé el servicio de refundido. Entregué mi
+                        cerita vieja y por $3.000 me dieron una barra nueva. Súper recomendable."</p>
                     <div class="pt-2 border-t border-sand">
                         <span class="block font-bold text-xs text-sage">Mariana B.</span>
                         <span class="text-[10px] text-gray-400">Palpalá, Jujuy</span>
@@ -578,16 +709,19 @@
 
     <!-- Pie de Página y Contacto -->
     <footer id="contacto" class="bg-sage text-sand-light pt-16 pb-8 border-t border-sage-dark">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-4 gap-8 pb-12 border-b border-sage-light/30">
+        <div
+            class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-4 gap-8 pb-12 border-b border-sage-light/30">
             <div class="space-y-4">
                 <div class="flex items-center gap-2">
-                    <div class="w-10 h-10 rounded-full bg-sand-light text-terracotta font-bold flex items-center justify-center font-serif text-xl overflow-hidden">
+                    <div
+                        class="w-10 h-10 rounded-full bg-sand-light text-terracotta font-bold flex items-center justify-center font-serif text-xl overflow-hidden">
                         <img src="./img/logo.png" alt="Puna Serena" class="w-full h-full object-cover">
                     </div>
                     <span class="text-xl font-serif font-bold text-white tracking-wider">PUNA SERENA</span>
                 </div>
                 <p class="text-xs text-sand-light/80 leading-relaxed">
-                    Aromatizadores ecológicos en barra con flores y yuyitos del Norte Jujeño. Arte, naturaleza y bienestar sustentable.
+                    Aromatizadores ecológicos en barra con flores y yuyitos del Norte Jujeño. Arte, naturaleza y
+                    bienestar sustentable.
                 </p>
             </div>
 
@@ -612,9 +746,12 @@
             <div>
                 <h4 class="font-serif font-bold text-white text-sm mb-4">Medios de Pago</h4>
                 <div class="flex flex-wrap gap-2 text-xs text-sand-light">
-                    <span class="bg-sage-dark/60 px-3 py-1.5 rounded border border-sage-light/20"><i class="fas fa-credit-card mr-1"></i> Mercado Pago</span>
-                    <span class="bg-sage-dark/60 px-3 py-1.5 rounded border border-sage-light/20"><i class="fas fa-university mr-1"></i> Transferencia</span>
-                    <span class="bg-sage-dark/60 px-3 py-1.5 rounded border border-sage-light/20"><i class="fas fa-money-bill-wave mr-1"></i> Efectivo</span>
+                    <span class="bg-sage-dark/60 px-3 py-1.5 rounded border border-sage-light/20"><i
+                            class="fas fa-credit-card mr-1"></i> Mercado Pago</span>
+                    <span class="bg-sage-dark/60 px-3 py-1.5 rounded border border-sage-light/20"><i
+                            class="fas fa-university mr-1"></i> Transferencia</span>
+                    <span class="bg-sage-dark/60 px-3 py-1.5 rounded border border-sage-light/20"><i
+                            class="fas fa-money-bill-wave mr-1"></i> Efectivo</span>
                 </div>
             </div>
 
@@ -626,16 +763,19 @@
             </div>
         </div>
 
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-sand-light/60 gap-4">
+        <div
+            class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-sand-light/60 gap-4">
             <p>© 2026 Puna Serena - Alma de la Puna, aroma natural. Todos los derechos reservados.</p>
             <p>Diseño & Eco-Ecommerce Jujuy</p>
         </div>
     </footer>
 
     <!-- Panel Lateral del Carrito de Compras -->
-    <div id="cartOverlay" onclick="alternarCarrito()" class="fixed inset-0 bg-black/50 z-50 opacity-0 pointer-events-none transition-opacity duration-300"></div>
+    <div id="cartOverlay" onclick="alternarCarrito()"
+        class="fixed inset-0 bg-black/50 z-50 opacity-0 pointer-events-none transition-opacity duration-300"></div>
 
-    <div id="cartPanel" class="fixed top-0 right-0 bottom-0 w-full sm:w-96 bg-white z-50 shadow-2xl transform translate-x-full transition-transform duration-300 flex flex-col">
+    <div id="cartPanel"
+        class="fixed top-0 right-0 bottom-0 w-full sm:w-96 bg-white z-50 shadow-2xl transform translate-x-full transition-transform duration-300 flex flex-col">
         <!-- Cabecera del Carrito -->
         <div class="p-4 bg-sand-soft border-b border-sand flex items-center justify-between">
             <div class="flex items-center gap-2">
@@ -652,7 +792,8 @@
             <div id="emptyCart" class="text-center py-12 text-gray-400 space-y-3">
                 <i class="fas fa-shopping-basket text-4xl text-sand"></i>
                 <p class="text-sm">Tu carrito está vacío</p>
-                <a href="#catalogo" onclick="alternarCarrito()" class="inline-block text-xs bg-terracotta text-white px-4 py-2 rounded-full font-semibold">
+                <a href="#catalogo" onclick="alternarCarrito()"
+                    class="inline-block text-xs bg-terracotta text-white px-4 py-2 rounded-full font-semibold">
                     Explorar Productos
                 </a>
             </div>
@@ -665,7 +806,8 @@
                     <span>Subtotal:</span>
                     <span id="cartSubtotal" class="font-bold">$0</span>
                 </div>
-                <div class="flex justify-between text-emerald-700 font-semibold" id="promoDiscountRow" style="display:none;">
+                <div class="flex justify-between text-emerald-700 font-semibold" id="promoDiscountRow"
+                    style="display:none;">
                     <span>Descuento Promo 2x $9.000:</span>
                     <span id="promoDiscount">-$0</span>
                 </div>
@@ -678,14 +820,17 @@
             <!-- Selección del Método de Entrega -->
             <div class="pt-2">
                 <label class="block text-[11px] font-semibold text-gray-700 mb-1">Método de Entrega / Envío:</label>
-                <select id="deliveryOption" class="w-full text-xs bg-white border border-sand rounded-xl p-2 focus:ring-1 focus:ring-terracotta focus:outline-none">
-                    <option value="Retiro en Punto de Entrega (San Salvador de Jujuy)">📍 Retiro en Punto de Entrega (SS de Jujuy)</option>
+                <select id="deliveryOption"
+                    class="w-full text-xs bg-white border border-sand rounded-xl p-2 focus:ring-1 focus:ring-terracotta focus:outline-none">
+                    <option value="Retiro en Punto de Entrega (San Salvador de Jujuy)">📍 Retiro en Punto de Entrega (SS
+                        de Jujuy)</option>
                     <option value="Envío a Domicilio en Jujuy">🚚 Envío a Domicilio en Jujuy</option>
                     <option value="Envío al Resto del País">📦 Envío al Resto del País</option>
                 </select>
             </div>
 
-            <button onclick="procesarPedidoWhatsApp()" class="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-3.5 rounded-xl shadow-lg transition-all flex items-center justify-center gap-2 text-sm active:scale-95">
+            <button onclick="procesarPedidoWhatsApp()"
+                class="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-3.5 rounded-xl shadow-lg transition-all flex items-center justify-center gap-2 text-sm active:scale-95">
                 <i class="fab fa-whatsapp text-lg"></i>
                 <span>Enviar Pedido por WhatsApp</span>
             </button>
@@ -693,7 +838,8 @@
     </div>
 
     <!-- Notificación Flotante (Toast) -->
-    <div id="toast" class="fixed bottom-6 right-6 bg-sage text-white text-xs px-4 py-3 rounded-2xl shadow-xl flex items-center gap-2 transform translate-y-20 opacity-0 transition-all duration-300 z-50">
+    <div id="toast"
+        class="fixed bottom-6 right-6 bg-sage text-white text-xs px-4 py-3 rounded-2xl shadow-xl flex items-center gap-2 transform translate-y-20 opacity-0 transition-all duration-300 z-50">
         <i class="fas fa-check-circle text-amber-300"></i>
         <span id="toastMsg">Producto agregado al carrito</span>
     </div>

@@ -297,6 +297,28 @@ function mostrarNotificacion(mensaje) {
     }
 }
 
+/**
+ * Inicia el carrusel/slider de imágenes de fondo para la sección Hero
+ */
+function iniciarSliderFondoHero() {
+    const diapositivas = document.querySelectorAll('.hero-bg-slide');
+    if (diapositivas.length === 0) return;
+
+    let indiceActual = 0;
+    const intervaloTiempo = 5000; // Cambia la imagen cada 5 segundos
+
+    setInterval(() => {
+        diapositivas[indiceActual].classList.remove('active');
+        indiceActual = (indiceActual + 1) % diapositivas.length;
+        diapositivas[indiceActual].classList.add('active');
+    }, intervaloTiempo);
+}
+
+// Escuchar la carga del DOM e iniciar el slider
+document.addEventListener('DOMContentLoaded', () => {
+    iniciarSliderFondoHero();
+});
+
 // Inicialización de funciones al cargar la página
 document.addEventListener('DOMContentLoaded', () => {
     inicializarBotonWhatsAppNav();

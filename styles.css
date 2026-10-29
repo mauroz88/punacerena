@@ -1,4 +1,11 @@
 /* Configuración de Fuentes y Fondo Principal */
+/* Activa el desplazamiento suave en todo el navegador */
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 90px;
+    /* Evita que la barra de navegación fija tape los títulos al hacer scroll */
+}
+
 body {
     font-family: 'Plus Jakarta Sans', sans-serif;
     background-color: #FDFBF7;
@@ -31,7 +38,7 @@ h3,
 }
 
 .custom-scroll::-webkit-scrollbar-track {
-    background: #F8EBD7;
+    background: #f8ebd72e;
 }
 
 .custom-scroll::-webkit-scrollbar-thumb {
@@ -42,4 +49,24 @@ h3,
 /* Estilos para animaciones de transición */
 .cat-btn.active {
     box-shadow: 0 2px 4px rgba(46, 90, 68, 0.2);
+}
+
+/* Estilos para las diapositivas de fondo del Hero */
+.hero-bg-slide {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out, transform 6s ease-out;
+    transform: scale(1);
+}
+
+/* Diapositiva activa con transición de Zoom sutil */
+.hero-bg-slide.active {
+    opacity: 0.5;
+    transform: scale(1.05);
+}
+
+.text-terracota {
+    --tw-text-opacity: 1;
+    color: rgb(255 67 0) !important;
 }
